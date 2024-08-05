@@ -26,6 +26,10 @@
     <title>Indus-Connect Club</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./eventstyle.css">
+    
 </head>
 
 <body>
@@ -120,8 +124,52 @@
                 </div>
             </div>
         </section>
+        <div>
+            <section id="gallery">
+                <div class="container, color:#4d80ed" data-aos="fade-up">
+                    <div class="section-header">
+                        <h1 class="memories">Events</h1>
+                        <h2 class="TITLE">Cyber Security Career Opportunities with Codewits</h2>
+                        <p class="description">The Chief Guests at the Event were Sandeep Sir, Chief Technology Officer, Kaustubh Hiwarekar Sir, Director of Engineering, Sharvari Thengodkar, Co-founder, Priyanka Ma’am, Chief People Officer at Codewits Solutions. They addressed students on how Cyber Security is a concern in today’s fast-paced world, covered work-related topics and provided valuable technical knowledge. </p>
+                    </div>
+                </div>
+    
+                <div class="swiper-container gallery-frame">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide gallery-item">
+                            <a class="gallery-lightbox"><img src="./resources/Event1/IMG-20240804-WA0043.jpg"
+                                    class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="swiper-slide gallery-item">
+                            <a class="gallery-lightbox"><img src="./resources/Event1/IMG-20240804-WA0044.jpg"
+                                    class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="swiper-slide gallery-item">
+                            <a class="gallery-lightbox"><img src="./resources/Event1/IMG-20240804-WA0045.jpg"
+                                    class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="swiper-slide gallery-item">
+                            <a class="gallery-lightbox"><img src="./resources/Event1/IMG-20240804-WA0047.jpg"
+                                    class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="swiper-slide gallery-item">
+                            <a class="gallery-lightbox"><img src="./resources/Event1/IMG-20240804-WA0049.jpg"
+                                    class="img-fluid" alt=""></a>
+                        </div>
+                        <div class="swiper-slide gallery-item">
+                            <a class="gallery-lightbox"><img src="./resources/Event1/IMG-20240804-WA0050.jpg"
+                                    class="img-fluid" alt=""></a>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+    
+            </section>
+        </div>
 
-        <section id="our-team" class="section">
+        <section id="our-team margin-top:10rem" class="section">
             <div class="container">
                 <h3 class="sub-heading">Faculty Advisors</h3>
                 <div class="grid">
@@ -134,7 +182,8 @@
                         <img src="./resources/team/Jyoti.png" alt="Jyoti" class="team-photo">
                         <h3>PROF. (SMT.) JYOTI PRAMOD KANJALKAR-KULKARNI
                         </h3>
-                        <p class="position">HoD, Computer Science and Engineering (Artificial Engineering & Machine Learning)</p>
+                        <p class="position">HoD, Computer Science and Engineering (Artificial Engineering &
+                            Machine Learning)</p>
                     </div>
                     <div class="team-card">
                         <img src="./resources/team/Kalyani.png" alt="Kalyani" class="team-photo">
@@ -143,9 +192,9 @@
                         <p class="position">Computer Science and Engineering(Artificial Engineering & Machine Learning))
                             Assistant Professor</p>
                     </div>
-                    
+
                 </div>
-                <h2 >Our Team</h2>
+                <h2>Our Team</h2>
                 <div class="grid">
                     <div class="team-card">
                         <img src="./resources/team/Rohit.png" alt="Rohit" class="team-photo">
@@ -293,6 +342,48 @@
                 announcement.classList.remove('hidden');
             }
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const lightbox = GLightbox({
+                selector: '.gallery-lightbox'
+            });
+
+            const swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                centeredSlides: true,
+                spaceBetween: 10,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                }
+            });
         });
     </script>
 </body>
