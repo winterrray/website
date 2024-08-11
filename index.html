@@ -20,14 +20,23 @@
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
             gap: 2rem;
+            
         }
         #about{
     
             background-color: rgba(255,255, 255, 0.15);
             border-radius: 20px;
             box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+        }
+        .card {
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            width:27rem
         }
     </style>
     
@@ -260,7 +269,7 @@
                 <div class="grid">
                     <div class="team-card">
                         <img src="./resources/team/Raj.jpg" alt="Raj" class="team-photo">
-                        <h3>Rajnandini Dharashive</h3>
+                        <h3 style="font-size: 1rem;">Rajnandini Dharashive</h3>
                         <p class="position">Tech Lead</p>
                         <img src="./resources/insta.jpeg" class="team-socials">
                         <img src="./resources/linkedin.jpg" alt="https://www.linkedin.com/in/rajnandini-dharashive/" class="team-socials">
