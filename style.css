@@ -310,6 +310,13 @@ footer {
     font-size: 2rem;
 }
 
+.team-socials{
+    width: 2.5rem;
+    border-radius: 10px;
+    padding-top: 7%;
+    margin-left: 3%;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
