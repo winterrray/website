@@ -20,16 +20,23 @@
         }
         .grid-2 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
             gap: 2rem;
+            justify-content: center;
             
-        }
+        } 
         
         #about{
     
             background-color: rgba(255,255, 255, 0.15);
             border-radius: 20px;
             box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+        }  
+        .experience{
+            padding-top: 15px;
+        }
+        .qualities{
+            padding-top: 15px;
         }
         
     </style>
@@ -79,7 +86,7 @@
                     the challenges they will face in their future careers. These unique aspects set us apart,
                     guaranteeing that our members gain crucial experience and skills that are vital for their future
                     success. Join the Icon (Indus Connect Club) and be a part of this transformative journey!</p>
-                <a href="https://forms.gle/hUUp1ZHLceR7Uyfn8" class="btn btn-large">Join Now</a>
+                <!-- <a href="https://forms.gle/hUUp1ZHLceR7Uyfn8" class="btn btn-large">Join Now</a> -->
             </div>
         </section>
 
@@ -138,7 +145,7 @@
                 <div class="swiper-container gallery-frame">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide gallery-item">
-                            <a class="gallery-lightbox"><img src="./resources/Event1/IMG-20240804-WA0043.jpg"
+                            <a class="gallery-lightbox"><img src="./resources/"
                                     class="img-fluid" alt=""></a>
                         </div>
                         <div class="swiper-slide gallery-item">
@@ -167,7 +174,7 @@
                     
                 </div>
                 <div class="container, color:#4d80ed" data-aos="fade-up">
-                    <div class="section-header" >
+                    <div class="section-header" style="margin-top:5rem" >
                         <h2 class="TITLE" >Problems and Opportunities in the Medical Devices Industry</h2>
                         <p class="description">The session on "Problems and Opportunities in the Medical Devices Industry" was a resounding success. It achieved its objectives of educating students, providing networking opportunities, and exploring potential career paths in the medical devices sector. We look forward to organizing more such informative and engaging events in the future. </p>
                     </div>
@@ -196,19 +203,22 @@
                                     class="img-fluid" alt=""></a>
                         </div>
                         <div class="swiper-slide gallery-item">
-                            <a class="gallery-lightbox"><img src="./resources/Event1/IMG-20240804-WA0050.jpg"
+                            <a class="gallery-lightbox"><img src="./resources/Event2/img5.jpg"
                                     class="img-fluid" alt=""></a>
                         </div>
-                        
+                        <div class="swiper-slide gallery-item">
+                            <a class="gallery-lightbox"><img src="./resources/Event2/img6.png"
+                                    class="img-fluid" alt=""></a>
+                        </div>
                         
                     </div>
                     
                 </div>
     
             </section>
-        </div>
+        </div> 
 
-        <section id="our-team margin-top:10rem" class="section">
+        <section id="our-team margin-top:1rem" class="section">
             <div class="container">
                 <h3 class="sub-heading">Faculty Advisors</h3>
                 <div class="grid">
@@ -423,6 +433,10 @@
                     disableOnInteraction: false,
                 },
                 breakpoints: {
+                    350:{
+                        slidesPerView: 1,
+                        spaceBetween: 5,
+                    },
                     640: {
                         slidesPerView: 2,
                         spaceBetween: 20,
@@ -432,6 +446,10 @@
                         spaceBetween: 40,
                     },
                     1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                    1204: {
                         slidesPerView: 3,
                         spaceBetween: 50,
                     },
