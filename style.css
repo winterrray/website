@@ -3,8 +3,10 @@
 :root {
     --primary-color: #4d80ed;
     --secondary-color: #ff7f50;
-    --text-color: #333333;
-    --bg-color: #ffffff;
+    --text-color: #becbd7;
+    --bg-color: #151719;
+/*     --text-color: #333333;
+    --bg-color: #ffffff; */
     --card-bg-color: #1e2124;
 }
 
