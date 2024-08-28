@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-color: #4d80ed;
+    --primary-color: #17367a;
     --secondary-color: #ff7f50;
-    --text-color: #becbd7;
-    --bg-color: #151719;
-/*     --text-color: #333333;
-    --bg-color: #ffffff; */
-    --card-bg-color: #1e2124;
+    /* --text-color: #becbd7;
+    --bg-color: #151719; */
+    --text-color: #333333;
+    --bg-color: #ffffff;
+    --card-bg-color: #68a3de;
 }
 
 * {
@@ -23,6 +23,16 @@ body {
     background-color: var(--bg-color);
 }
 
+
+#icon-anim {
+    /* position: fixed; */
+    /* right: 0;
+    bottom: 0; */
+    min-width: 90%;
+    min-height: 90%;
+}
+
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -31,9 +41,9 @@ body {
 
 #about{
     
-    background-color: rgba(255,255, 255, 0.15);
+    background-color: rgb(249, 249, 249);
     border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(74, 67, 67, 0.1);
 }
 
 #about > div > p{
@@ -41,7 +51,8 @@ body {
 }
 
 header {
-    background-color: rgba(30, 33, 36, 0.8);
+    /* background-color: rgba(75, 149, 222, 0.8); */
+    background-image: linear-gradient(to right, rgba(231, 71, 154, 0.644), rgb(46, 152, 209));
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -62,6 +73,7 @@ header {
     width: 100%;
     z-index: 999;
     transition: transform 0.3s ease; 
+    margin-top: 1rem;
 }
 
 .announcement.hidden {
@@ -122,7 +134,7 @@ form > .btn:hover{
 
 .btn:hover {
     /*background-color: #3a69c7;*/
-    background-color: #151719;
+    background-color: #7f91a2;
 }
 
 .btn-large {
@@ -150,7 +162,8 @@ h2 {
 }
 .hero {
     text-align: center;
-    padding: 6rem 0;
+    padding-bottom: 6rem;
+    padding-top:1rem;
 }
 
 .hero p {
@@ -270,7 +283,8 @@ footer {
 }
   
 .team-card{
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    background-color: rgb(36 109 153 /68%);
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
@@ -332,6 +346,9 @@ footer {
     background-color: var(--text-color);
     margin: 2px 0;
 }
+.hamburger li{
+    margin-left:1rem;
+}
 
 @media (max-width: 768px) {
     .container {
@@ -369,7 +386,7 @@ footer {
     }
 
     nav ul li {
-        margin: 0.5rem 0;
+        margin: 0.5rem 0.5rem;
     }
 
     .announcement {
